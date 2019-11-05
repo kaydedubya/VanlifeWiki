@@ -1,6 +1,7 @@
-[Van types and comparisons][vantypes]
+---
+layout: default
+---
+
+# Vehiclemain
+
 Common van repairs and maintenance
-
-
-
-[vantypes]:https://github.com/kaydedubya/vankit/wiki/Van-Types

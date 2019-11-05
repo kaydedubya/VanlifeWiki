@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Welcome to the vankit wiki!
 
 Make a page per topic, nest under a high level category if that makes sense to do - links will be to the right
