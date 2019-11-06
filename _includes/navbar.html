@@ -25,6 +25,8 @@
     {% for cat in catlist %}
       <li><a href="{{ site.baseurl }}/pages/{{cat}}main">{{ cat }}</a></li>
     {% endfor %}
+    <li>{{ site.baseurl }}</li>
+    <li>{{ site.url }}</li>
   </ul>
 
 </div>
@@ -35,8 +37,8 @@
 var sjs = SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
-        json: '{{ site.url }}/{{ site.baseurl }}/search.json',
-        dataSource: '{{ site.url }}/{{ site.baseurl }}/search.json',
+        json: '{{ site.url }}/search.json',
+        dataSource: '{{ site.url }}/search.json',
         searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>',
         noResultsText: 'No results found',
         limit: 10,
