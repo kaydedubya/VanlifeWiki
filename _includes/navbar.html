@@ -39,7 +39,7 @@ var sjs = SimpleJekyllSearch({
         resultsContainer: document.getElementById('results-container'),
         json: '{{ site.url }}/search.json',
         dataSource: '{{ site.url }}/search.json',
-        searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>',
+        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
         noResultsText: 'No results found',
         limit: 10,
         fuzzy: false,
