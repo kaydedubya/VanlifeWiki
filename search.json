@@ -4,10 +4,10 @@ layout: null
 [{% assign sortedlist = site.html_pages | sort_natural: 'url' %}{% for page in sortedlist %}{% if page.url == "/" %}
    {
      "title": "Home",
-     "url": "{{ site.baseurl }}{{ page.url }}"
+     "url": "{{ site.url }}{{ page.url }}"
    }{% unless forloop.last %},{% endunless %} {% elsif page.url contains "pages/" %}
    {
      "title"  : "{{ page.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html'}}",
-     "url": "{{ site.baseurl }}{{ page.url }}"
+     "url": "{{ site.url }}{{ page.url }}"
    }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
 ]
