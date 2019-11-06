@@ -1,5 +1,7 @@
 ---
+title: Lifestyle Main
 layout: default
+categories: lifestyle
 ---
 
 # Lifestylemain

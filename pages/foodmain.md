@@ -1,5 +1,7 @@
 ---
+title: Food Main
 layout: default
+categories: food
 ---
 # Foodmain
 Cooking and food options

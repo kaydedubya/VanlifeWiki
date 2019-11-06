@@ -1,5 +1,7 @@
 ---
+title: Power Main
 layout: default
+categories: power
 ---
 
 # Powermain

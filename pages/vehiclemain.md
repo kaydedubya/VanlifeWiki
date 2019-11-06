@@ -1,5 +1,7 @@
 ---
+title: Vehicle Main
 layout: default
+categories: vehicle
 ---
 
 # Vehiclemain

@@ -1,5 +1,7 @@
 ---
+title: Layout Main
 layout: default
+categories: layout
 ---
 
 # Layoutmain

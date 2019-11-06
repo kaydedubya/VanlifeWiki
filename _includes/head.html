@@ -3,8 +3,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
-
   <style>
 
     #page-url {
@@ -46,6 +44,9 @@
 
     #index-box {
       float: right;
+      position: fixed;
+      right: 0;
+      top: 15;
       border-style: solid;
       border-width: 2px 0 2px 2px;
       font-size: 9pt;
@@ -67,8 +68,15 @@
 	  	margin-bottom: 4px;
 	  }
 
-	  #results-container {
+          #search-demo-container {
+              position: fixed;
+              top: 15;
+              right: 0;
+          }
+
+	  #results-container-bak {
 	  	display: none;
 	  }
   </style>
+
 </head>
