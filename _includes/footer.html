@@ -1,4 +1,18 @@
 <footer class="site-footer h-card">
   <div class="wrapper">
+
+<ul>
+{% if page.name contains 'main' %}
+  <h2> Pages in this category </h2>
+  {% assign cat = site.pages %}
+  {% for pages in cat %}
+    {% if pages.categories == page.categories and pages.url != page.url %}
+      <li><a href="{{ site.baseurl }}{{ pages.url }}">{{ pages.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  <h2>This page is part of the <a href="{{ site.baseurl }}/pages/{{ page.categories }}main">{{ page.categories }}</a> series.</h2>
+{% endif %}
+</ul>
   </div>
 </footer>
