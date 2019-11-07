@@ -9,3 +9,25 @@ Theoretical skeleton structure
 Home -
  \- Primary category links
     \- /pages/singlepage
+
+
+-=* Accessibility goals *=-
+Pictures have labels
+Clean backend text that is easy to put through speech-to-text or other such programs
+
+Standard web accessibility concerns
+- visual (color blind, low vision, blindness)
+  * Label all images
+  * Simple & clean format, black & white for maximum contrast, "dark mode" support
+  * https://www.w3.org/WAI/perspective-videos/speech/
+- motor (muscle control, tremors)
+  * Interactive parts of website should be non-obtrussive and easy to use (eg toggles)
+  * Special care should be given to mobile users (touch screen exacerbates usability concerns)
+- cognitive (try to unify a simple "in plain english" format for readability)
+  * https://simple.wikipedia.org/wiki/Wikipedia:Simple_English_Wikipedia#Simple_English
+  * https://simple.wikipedia.org/wiki/Textual_difficulty#Readability_predictions
+  * Navigation should be clean and intuitive. A link from a category to a page should have an inverse link from a page to a category (eg "this is part of the X series of pages)
+
+Potential nonissues
+- auditory (should be a non-issue as this is mostly text)
+- seizures (shouldn't have to be said but no strobe or flashing is needed)
