@@ -1,4 +1,28 @@
 <script src="https://kaydedubya.github.io/VanlifeWiki/jekyllsearch.min.js"></script>
+<script>
+var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.url }}/search.json',
+        dataSource: '{{ site.url }}/search.json',
+        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+      })
+
+function openNav() {
+  document.getElementById("index-box").style.width = "250px";
+  document.getElementById("index-box-closed").style.right = "250px";
+}
+
+function closeNav() {
+  document.getElementById("index-box").style.width = "0px";
+  document.getElementById("index-box-closed").style.right = "0px";
+
+}
+</script>
+
 
 
 {% assign catlist = "" | split: "," %}
@@ -14,6 +38,7 @@
 
 
 <div id="index-box">
+  <h2><a href="javascript:void(0)" class="index-box-close" onclick="closeNav()">X</a></h2>
   <input type="text" id="search-input" placeholder="search...">
 
   <ul id="results-container">
@@ -28,23 +53,8 @@
     <li>{{ site.baseurl }}</li>
     <li>{{ site.url }}</li>
   </ul>
-
 </div>
 
-
-
-<script>
-var sjs = SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '{{ site.url }}/search.json',
-        dataSource: '{{ site.url }}/search.json',
-        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-        noResultsText: 'No results found',
-        limit: 10,
-        fuzzy: false,
-      })
-
-
-</script>
-
+<div id="index-box-closed">
+  <h2><a href="javascript:void(0)" class="index-box-close" onclick="openNav()">X</a></h2>
+</div>
