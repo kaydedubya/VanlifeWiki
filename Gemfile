@@ -18,7 +18,7 @@ gem "rake", "~> 12.3"
 gem "sinatra", "~> 2.0.2"
 gem "thin", "~> 1.7"
 
-gem "redcarpet", "~> 3.4"
+gem "redcarpet", "~> 3.5"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
